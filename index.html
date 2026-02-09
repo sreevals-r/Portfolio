@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SREEVALS R | Creative Developer</title>
+    <!-- Font: Anton for that ultra-bold, condensed look -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@300;400;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/devicon/2.15.1/devicon.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+
+<body>
+    <canvas id="snowCanvas"></canvas>
+
+    <!-- Loading Intro (Fixed Overlay) -->
+    <div id="intro-container">
+        <div class="curtain-container"></div>
+        <div class="noise-overlay"></div>
+
+        <div class="content-wrapper">
+            <!-- Text injected by script.js -->
+            <h1 class="cinematic-text"></h1>
+        </div>
+    </div>
+
+    <!-- Main Website Content (Revealed after intro) -->
+    <nav class="navbar">
+        <!-- Logo removed -->
+
+        <div class="menu-toggle" id="menuToggle">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M4 12H20" stroke="white" stroke-width="2" stroke-linecap="round" />
+                <path d="M4 6H20" stroke="white" stroke-width="2" stroke-linecap="round" />
+            </svg>
+        </div>
+    </nav>
+
+    <!-- Sidebar / Drawer -->
+    <div class="sidebar-menu" id="sidebarMenu">
+        <div class="sidebar-close" id="sidebarClose">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M18 6L6 18" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M6 6L18 18" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+        </div>
+
+        <div class="sidebar-content">
+            <div class="sidebar-col">
+                <h3>SOCIAL</h3>
+                <ul>
+                    <li><a href="https://github.com/sreevals-r" target="_blank">Github</a></li>
+                    <li><a href="https://www.linkedin.com/in/sreevalsr/" target="_blank">Linkedin</a></li>
+                    <li><a href="https://www.instagram.com/sreevals._?igsh=dGhyOW13cDV6ZDh0"
+                            target="_blank">Instagram</a></li>
+                    <li><a href="https://x.com/Sreevals_R" target="_blank">Twitter</a></li>
+                </ul>
+            </div>
+
+            <div class="sidebar-col">
+                <h3>MENU</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#work">My Works</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="sidebar-footer">
+            <h3>GET IN TOUCH</h3>
+            <p>rsreevals90@gmail.com</p>
+        </div>
+    </div>
+
+    <main>
+        <section id="hero">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    <span class="title-green">AI/ML</span><br>
+                    <span class="title-white">DEVELOPER</span>
+                </h1>
+                <p class="hero-bio">
+                    Hi, I’m Sreevals Building intelligent Computer Vision systems from real-world visual chaos.
+                </p>
+                <div class="scroll-indicator">SCROLL</div>
+            </div>
+        </section>
+
+        <section id="about">
+            <h2 class="section-title">ABOUT ME</h2>
+            <div class="about-container">
+                <div class="about-text">
+                    <p>
+                        I build intelligent systems that bridge the gap between abstract chaos and structured order. As
+                        an AI
+                        Engineer and Full Stack Developer, I specialize in creating scalable solutions that leverage
+                        machine
+                        learning to solve real-world problems.
+                    </p>
+                </div>
+                <div class="about-image">
+                    <!-- Replace 'portrait.jpg' with your actual photo path -->
+                    <img src="C:\Users\User\OneDrive\Pictures\Saved Pictures\dp3.jpg" alt="Sreevals R">
+                </div>
+            </div>
+        </section>
+
+        <section id="work">
+            <h2 class="section-title">MY WORKS</h2>
+            <div class="work-scroll-container">
+
+                <!-- 01 ParkXplore -->
+                <div class="project-card proj-park">
+                    <div class="card-header">
+                        <span class="project-number gravity-text">01</span>
+                        <div class="project-titles">
+                            <h3 class="gravity-text">ParkXplore</h3>
+                            <span class="project-domain gravity-text">AI / Computer Vision</span>
+                        </div>
+                    </div>
+                    <div class="card-image">
+                        <img src="images/parkxplore.jpg" alt="ParkXplore">
+                    </div>
+                    <div class="card-body">
+                        <p class="project-desc gravity-text">Smart parking detection in unstructured spaces using YOLO
+                            and polygon-based spot analysis.</p>
+                        <div class="project-tools gravity-text">
+                            <span>Python</span><span>YOLO</span><span>OpenCV</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 02 LitLoom -->
+                <div class="project-card proj-lit">
+                    <div class="card-header">
+                        <span class="project-number gravity-text">02</span>
+                        <div class="project-titles">
+                            <h3 class="gravity-text">LitLoom</h3>
+                            <span class="project-domain gravity-text">AI / Software Development</span>
+                        </div>
+                    </div>
+                    <div class="card-image">
+                        <img src="images/litloom.jpg" alt="LitLoom">
+                    </div>
+                    <div class="card-body">
+                        <p class="project-desc gravity-text">Desktop tool for poets to analyze rhyme, rhythm, and
+                            sentiment with NLP techniques.</p>
+                        <div class="project-tools gravity-text">
+                            <span>Desktop App</span><span>NLP</span><span>Sentiment</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 03 AI Study Buddy Timer -->
+                <div class="project-card proj-study">
+                    <div class="card-header">
+                        <span class="project-number gravity-text">03</span>
+                        <div class="project-titles">
+                            <h3 class="gravity-text">AI Study Buddy</h3>
+                            <span class="project-domain gravity-text">AI / Productivity</span>
+                        </div>
+                    </div>
+                    <div class="card-image">
+                        <img src="images/study_buddy.jpg" alt="AI Study Buddy">
+                    </div>
+                    <div class="card-body">
+                        <p class="project-desc gravity-text">Webcam-based focus assistant that detects distractions and
+                            nudges you back to work.</p>
+                        <div class="project-tools gravity-text">
+                            <span>Python</span><span>Webcam</span><span>Object Detection</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 04 DeepSolar Guard -->
+                <div class="project-card proj-solar">
+                    <div class="card-header">
+                        <span class="project-number gravity-text">04</span>
+                        <div class="project-titles">
+                            <h3 class="gravity-text">DeepSolar Guard</h3>
+                            <span class="project-domain gravity-text">AI / Android</span>
+                        </div>
+                    </div>
+                    <div class="card-image">
+                        <img src="images/deepsolar.jpg" alt="DeepSolar Guard">
+                    </div>
+                    <div class="card-body">
+                        <p class="project-desc gravity-text">Android app that detects rooftop solar panels using AI with
+                            real-time map integration.</p>
+                        <div class="project-tools gravity-text">
+                            <span>Android</span><span>AI</span><span>Maps</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 05 College Bus Tracker -->
+                <div class="project-card proj-bus">
+                    <div class="card-header">
+                        <span class="project-number gravity-text">05</span>
+                        <div class="project-titles">
+                            <h3 class="gravity-text">CB Tracker</h3>
+                            <span class="project-domain gravity-text">App Development / IoT</span>
+                        </div>
+                    </div>
+                    <div class="card-image">
+                        <img src="images/bus_tracker.jpg" alt="College Bus Tracker">
+                    </div>
+                    <div class="card-body">
+                        <p class="project-desc gravity-text">Real-time GPS tracking app to streamline and monitor campus
+                            bus movement.</p>
+                        <div class="project-tools gravity-text">
+                            <span>GPS</span><span>Android</span><span>IoT</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 06 Sign Language Converter -->
+                <div class="project-card proj-sign">
+                    <div class="card-header">
+                        <span class="project-number gravity-text">06</span>
+                        <div class="project-titles">
+                            <h3 class="gravity-text">SL Detector</h3>
+                            <span class="project-domain gravity-text">AI / Accessibility</span>
+                        </div>
+                    </div>
+                    <div class="card-image">
+                        <img src="images/sign_language.jpg" alt="Sign Language Converter">
+                    </div>
+                    <div class="card-body">
+                        <p class="project-desc gravity-text">Computer Vision system that converts sign gestures into
+                            audible speech.</p>
+                        <div class="project-tools gravity-text">
+                            <span>Python</span><span>ML</span><span>CV</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="scroll-instruction">
+                <span>SCROLL TO EXPLORE</span>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M5 12H19" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M12 5L19 12L12 19" stroke="white" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                </svg>
+            </div>
+        </section>
+
+        <section id="tech">
+            <h2 class="section-title">TECH STACK</h2>
+            <div class="tech-grid">
+                <!-- AI / ML -->
+                <div class="tech-card card-python"><i class="devicon-python-plain"></i><span>Python</span></div>
+                <div class="tech-card card-tensorflow"><i
+                        class="devicon-tensorflow-original"></i><span>TensorFlow</span></div>
+                <div class="tech-card card-pytorch"><i class="devicon-pytorch-original"></i><span>PyTorch</span></div>
+                <div class="tech-card card-opencv"><i class="devicon-opencv-plain"></i><span>OpenCV</span></div>
+                <div class="tech-card card-pandas"><i class="devicon-pandas-plain"></i><span>Pandas</span></div>
+                <div class="tech-card card-numpy"><i class="devicon-numpy-plain"></i><span>NumPy</span></div>
+
+                <!-- App / Web -->
+                <div class="tech-card card-java"><i class="devicon-java-plain"></i><span>Java</span></div>
+                <div class="tech-card card-android"><i class="devicon-android-plain"></i><span>Android</span></div>
+                <div class="tech-card card-flutter"><i class="devicon-flutter-plain"></i><span>Flutter</span></div>
+                <div class="tech-card card-html"><i class="devicon-html5-plain"></i><span>HTML5</span></div>
+                <div class="tech-card card-css"><i class="devicon-css3-plain"></i><span>CSS3</span></div>
+                <div class="tech-card card-js"><i class="devicon-javascript-plain"></i><span>JavaScript</span></div>
+
+                <!-- Tools / Backend -->
+                <div class="tech-card card-git"><i class="devicon-git-plain"></i><span>Git</span></div>
+                <div class="tech-card card-github"><i class="devicon-github-original"></i><span>GitHub</span></div>
+                <div class="tech-card card-firebase"><i class="devicon-firebase-plain"></i><span>Firebase</span></div>
+                <div class="tech-card card-mysql"><i class="devicon-mysql-plain"></i><span>MySQL</span></div>
+                <div class="tech-card card-figma"><i class="devicon-figma-plain"></i><span>Figma</span></div>
+                <div class="tech-card card-vscode"><i class="devicon-vscode-plain"></i><span>VS Code</span></div>
+            </div>
+        </section>
+        <section id="contact">
+            <div class="contact-container">
+
+                <h2 class="contact-name">CONTACT</h2>
+
+                <div class="contact-grid">
+
+                    <!-- Email / Location -->
+                    <div class="contact-col">
+                        <div class="contact-group">
+                            <h3>Email</h3>
+                            <a class="contact-link" href="mailto:rsreevals90@gmail.com">
+                                rsreevals90@gmail.com
+                            </a>
+                        </div>
+
+                        <div class="contact-group">
+                            <h3>Location</h3>
+                            <p>India</p>
+                        </div>
+                    </div>
+
+                    <!-- Social -->
+                    <div class="contact-col">
+                        <h3>Social</h3>
+                        <ul class="social-list">
+                            <li><a href="https://github.com/sreevals-r" target="_blank">Github <i>↗</i></a></li>
+                            <li><a href="https://www.linkedin.com/in/sreevalsr/" target="_blank">Linkedin <i>↗</i></a>
+                            </li>
+                            <li><a href="https://x.com/Sreevals_R" target="_blank">Twitter <i>↗</i></a></li>
+                            <li><a href="https://www.instagram.com/sreevals._?igsh=dGhyOW13cDV6ZDh0"
+                                    target="_blank">Instagram <i>↗</i></a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Credits -->
+                    <div class="contact-col right-align">
+                        <div class="credits">
+                            <p>Designed and Developed by<br><strong>Sreevals R</strong></p>
+                            <p>© 2026</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+        <footer style="padding: 5vw; opacity: 0.5; font-size: 0.8rem;">
+            &copy; 2026 Sreevals R. All Rights Reserved.
+        </footer>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
